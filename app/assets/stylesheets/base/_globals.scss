@@ -10,11 +10,14 @@ html, body {
 
 header {
 	background: $blu;
+	height: 3.5em;
 
 	.title {
-		font-family: $quicksand-stack;
-		font-weight: 400;
+		font: 400 2.5em $quicksand-stack;
 		color: $yello;
+		text-align: right;
+
+		padding: .075em .3em 0 0;
 
 		em {
 			color: lighten($lite-blu, 30);
