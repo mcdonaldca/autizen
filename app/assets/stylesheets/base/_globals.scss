@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	background: $blu;
+
+	.title {
+		font-family: $quicksand-stack;
+		font-weight: 400;
+		color: $yello;
+
+		em {
+			color: lighten($lite-blu, 30);
+			font-style: normal;
+			font-weight: 700;
+		}
+	}
+}
+
+.core {
+	color: white;
+	background: $dark-grey;
+	font-family: $open-sans-stack;
+
+	max-width: 540px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -155px;
+
+	/* IE 6 support */
+	height: auto !important; 
+	height: 100%;
+}
+
+footer, .push {
+	height: 155px;
+}

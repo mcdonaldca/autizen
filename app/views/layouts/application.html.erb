@@ -2,13 +2,25 @@
 <html>
 <head>
   <title>Autizen</title>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="core wrapper">
+	<header>
+		<h1 class="title">AUTI<em>ZEN</em></h1>
+	</header>
+
+	<%= yield %>
+
+	<div class="push">
+	</div>
+</div>
+<footer>
+</footer>
 
 </body>
 </html>
