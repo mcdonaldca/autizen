@@ -1,5 +1,7 @@
 Autizen::Application.routes.draw do
 
+  resources :triggers
+
   root 'main#controls'
 
   # The priority is based upon order of creation: first created -> highest priority.

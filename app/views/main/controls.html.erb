@@ -1,8 +1,17 @@
 <h1>your controls</h1>
 
 <div class="trigger">
-	<div class="title">When the <em>humidity is higher than 30%</em>, please <em>turn on the humidifier</em>.</div>
+	<div class="title">
+		<p>When the <em>humidity is higher than 30%</em>, please <em>turn on the humidifier</em>.</p>
+		<div class="x">&times;</div>
+	</div>
 	<div class="trigger-img"></div>
 	<div class="arrow-area"><div class="arrow"></div></div>
 	<div class="action-img"></div>
 </div>
+
+<%= link_to new_trigger_url do %>
+	<div class="trigger">
+		<div class="add">&plus;</div>
+	</div>
+<% end %>

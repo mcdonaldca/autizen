@@ -15,6 +15,20 @@
 			font-style: normal;
 			color: $yello;
 		}
+
+		p {
+			width: 90%;
+		}
+
+		.x {
+			font-size: 1.5em;
+			float: right;
+			width: .25em;
+			height: .25em;
+			position: absolute;
+			top: .18em;
+			right: .75em;
+		}
 	}
 
 	.trigger-img, .action-img {
@@ -35,4 +49,15 @@
 			background: white;
 		}
 	}
+
+ .add {
+		font: 300 3em $quicksand-stack;
+		text-align: center;
+		
+	}
+}
+
+a {
+	color: $yello;
+	text-decoration: none;
 }
