@@ -44,12 +44,12 @@ s = Rufus::Scheduler.singleton
 # Awesome recurrent task...
 #
 s.every '30m' do
-	Mail.deliver do
-	       to 'codingFTWatt@gmail.com'
-	     from 'codingFTWatt@gmail.com'
-	  subject 'testing sendmail'
-	     body 'testing sendmail'
-	end
+	#Mail.deliver do
+	       #to 'codingFTWatt@gmail.com'
+	     #from 'codingFTWatt@gmail.com'
+	  #subject 'testing sendmail'
+	     #body 'testing sendmail'
+	#end
 end
 
 

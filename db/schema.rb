@@ -11,9 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150104003442) do
+ActiveRecord::Schema.define(version: 20150104063728) do
 
   create_table "triggers", force: true do |t|
+    t.string   "trigger"
+    t.string   "action"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
