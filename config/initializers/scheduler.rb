@@ -45,7 +45,7 @@ s = Rufus::Scheduler.singleton
 
 # Awesome recurrent task...
 #
-s.every '5s' do
+s.every '1m' do
   response = Net::HTTP.get_response(URI("http://www.mailinator.com/feed?to=codingftwatt")).body
   data = Hash.from_xml(response).to_json
   item_info = JSON.parse(data)["RDF"]["item"]

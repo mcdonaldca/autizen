@@ -104,7 +104,7 @@ h1 {
 
 .wrapper {
 	min-height: 100%;
-	margin: 0 auto -155px;
+	margin: 0 auto -1px;
 
 	/* IE 6 support */
 	height: auto !important; 
@@ -112,5 +112,5 @@ h1 {
 }
 
 footer, .push {
-	height: 155px;
+	height: 1px;
 }
