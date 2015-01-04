@@ -1,1 +1,7 @@
 <h1>Your controls</h1>
+
+<ul>
+	<% @triggers.each do |trigger| %>
+		<li>Test<%= trigger.id %></li>
+	<% end %>
+</ul>
