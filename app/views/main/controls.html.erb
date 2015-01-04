@@ -1,17 +1,21 @@
 <h1>your controls</h1>
 
-<div class="trigger">
-	<div class="title">
-		<p>When the <em>humidity is higher than 30%</em>, please <em>turn on the humidifier</em>.</p>
-		<div class="x">&times;</div>
+<% @triggers.each do |trigger| %>
+	<div class="trigger">
+		<div class="title">
+			<p>When <em><%= trigger.trigger %></em> please <em><%= trigger.action %></em></p>
+			<%= link_to trigger_url(trigger), method: 'delete' do %>
+				<div class="x">&times;</div>
+			<% end %>
+		</div>
+		<div class="trigger-img"><%= image_tag(find_icon(trigger.trigger)) %></div>
+		<div class="arrow-area"><div class="arrow"><%= image_tag("arrow.png") %></div></div>
+		<div class="action-img"><%= image_tag(find_icon(trigger.action)) %></div>
 	</div>
-	<div class="trigger-img"></div>
-	<div class="arrow-area"><div class="arrow"></div></div>
-	<div class="action-img"></div>
-</div>
+<% end %>
 
 <%= link_to new_trigger_url do %>
-	<div class="trigger">
+	<div class="trigger last">
 		<div class="add">&plus;</div>
 	</div>
 <% end %>

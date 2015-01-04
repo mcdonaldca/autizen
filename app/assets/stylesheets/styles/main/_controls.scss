@@ -3,13 +3,14 @@
 
 	width: 90%;
 	margin: .75em auto;
-	padding: 2%;
 	border-radius: .4em;
+	padding-bottom: 1em;
 	position: relative;
 
 	.title {
 		font: 300 1.2em $open-sans-stack;
 		margin-bottom: .75em;
+		padding: 5%;
 
 		em {
 			font-style: normal;
@@ -33,20 +34,31 @@
 
 	.trigger-img, .action-img {
 		width: 20%;
-		height: 20px;
 		display: inline-block;
-		background: white;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.trigger-img {
+		margin-left: 10%;
+	}
+	.action-img {
+		margin-right: 10%;
 	}
 
 	.arrow-area {
-		width: 56%;
+		width: 37%;
 		display: inline-block;
 
 		.arrow {
-			width: 25%;
-			height: 20px;
+			width: 54%;
 			margin: 0 auto;
-			background: white;
+
+			img {
+				width: 100%;
+			}
 		}
 	}
 
@@ -55,6 +67,11 @@
 		text-align: center;
 		
 	}
+}
+
+// Gah I know there's a selector for this #lazy
+.trigger.last {
+	padding-bottom: 0;
 }
 
 a {

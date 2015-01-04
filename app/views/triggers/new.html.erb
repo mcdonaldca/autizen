@@ -1,0 +1,15 @@
+
+
+<h1>new trigger</h1>
+
+<%= form_tag create_trigger_url, method: "post", class: "new-trigger" do %>
+	<h2>when</h2>
+	<div class="styled-select slate">
+		<%= select_tag "trigger", options_for_select([ "the humidity is higher than 30%", "the humidity is lower than xx%", "motion is detected" ], "humidity is higher than 30%")%>
+	</div>
+	<h2>please</h2>
+	<div class="styled-select slate">
+		<%= select_tag "reaction", options_for_select([ "turn on the humidifier", "turn off the humidifier", "turn on the light", "turn off the light" ], "turn on the humidifier")%>
+	</div>
+	<%= submit_tag "create control" %>
+<% end %>

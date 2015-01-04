@@ -112,6 +112,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  json
   mail
   rails (= 4.0.3)
   rufus-scheduler (= 3.0.9)

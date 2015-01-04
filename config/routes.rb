@@ -2,7 +2,9 @@ Autizen::Application.routes.draw do
 
   resources :triggers
 
-  root 'main#controls'
+  root :to => 'main#controls', :as => :controls
+
+  post 'create' => 'triggers#create', :as => :create_trigger
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

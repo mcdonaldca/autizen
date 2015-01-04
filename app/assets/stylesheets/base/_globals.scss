@@ -20,6 +20,10 @@ header {
 
 		padding: .075em .3em 0 0;
 
+		h1.title {
+			margin-bottom: 0;
+		}
+
 		em {
 			color: $yello;
 			font-style: normal;
@@ -35,6 +39,45 @@ header {
 
 		img {
 			width: 100%;
+		}
+	}
+
+	nav {
+
+		.mobile-nav {
+			float: right;
+			display: none;
+			padding: 1.05em 1em 0 0;
+		}
+
+		ul.mobile {
+			display: none;
+			padding: 0;
+			margin: -15px 0 13px 0;
+			float: left;
+			width: 100%;
+			background: $dark-grey;
+			border-bottom: 3px $blu solid;
+
+			li {
+				width: 100%;
+				list-style: none;
+				text-align: center;
+				padding: .75em 0;
+
+				border-bottom: 1px darken($dark-grey, 10%) solid;
+
+				a {
+					display: inline-block;
+					width: 100%;
+				}
+
+				@include transition(background);
+
+				&:hover {
+					background: darken($dark-grey, 10%);
+				}
+			}
 		}
 	}
 }
@@ -55,6 +98,8 @@ header {
 
 h1 {
 	font-weight: 300;
+	text-align: center;
+	margin-bottom: .5em; 
 }
 
 .wrapper {

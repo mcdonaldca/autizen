@@ -1,0 +1,56 @@
+.new-trigger {
+   margin-top: 1em;
+}
+
+h2 {
+   font: 300 1.3em $quicksand-stack;
+}
+
+.styled-select {
+   height: 34px;
+   overflow: hidden;
+   width: 90%;
+   padding: 0 5%;
+   display: inline-block;
+   margin: .75em 0;
+}
+
+.styled-select select {
+   background: $blu;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 100%;
+}
+
+.styled-select.slate select {
+   color: white;
+   border: 1px solid $lite-blu;
+   font-size: 16px;
+   height: 34px;
+   width: 100%;
+}
+
+/* -------------------- Rounded Corners */
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+
+
+input[type="submit"] {
+   background: $yello;
+   color: black;
+   padding: .75em;
+   width: 90%;
+   margin: 1.5em 5% 0 5%;
+   border: none;
+
+   font: 1.5em $open-sans-stack;
+
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
