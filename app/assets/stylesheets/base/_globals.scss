@@ -11,18 +11,30 @@ html, body {
 header {
 	background: $blu;
 	height: 3.5em;
+	position: relative;
 
 	.title {
 		font: 400 2.5em $quicksand-stack;
-		color: $yello;
+		color: lighten($lite-blu, 30);
 		text-align: right;
 
 		padding: .075em .3em 0 0;
 
 		em {
-			color: lighten($lite-blu, 30);
+			color: $yello;
 			font-style: normal;
-			font-weight: 700;
+			font-weight: 300;
+		}
+	}
+
+	.menu-icon {
+		position: absolute;
+		left: 1em;
+		top: .75em;
+		width: 2em; 
+
+		img {
+			width: 100%;
 		}
 	}
 }
