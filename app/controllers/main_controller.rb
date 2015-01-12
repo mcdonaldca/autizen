@@ -7,7 +7,7 @@ class MainController < ApplicationController
 	helper_method :find_icon
 
 	def find_icon(command)
-		if command == "the humidity is higher than 30%" or command == "the humidity is lower than xx%" or command == "turn on the humidifier"
+		if command == "the humidity is higher than xx%" or command == "the humidity is lower than xx%" or command == "turn on the humidifier"
 			return "humidifier.png"
 		end
 		if command == "turn on the air filter"

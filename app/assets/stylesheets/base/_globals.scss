@@ -13,24 +13,6 @@ header {
 	height: 3.5em;
 	position: relative;
 
-	.title {
-		font: 400 2.5em $quicksand-stack;
-		color: lighten($lite-blu, 30);
-		text-align: right;
-
-		padding: .075em .3em 0 0;
-
-		h1.title {
-			margin-bottom: 0;
-		}
-
-		em {
-			color: $yello;
-			font-style: normal;
-			font-weight: 300;
-		}
-	}
-
 	.menu-icon {
 		position: absolute;
 		left: 1em;
@@ -39,6 +21,17 @@ header {
 
 		img {
 			width: 100%;
+		}
+	}
+
+	.logo {
+		height: 2em;
+		text-align: right;
+
+		padding: .75em .8em 0 0;
+
+		img {
+			height: 100%;
 		}
 	}
 

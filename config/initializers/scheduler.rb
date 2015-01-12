@@ -71,7 +71,7 @@ s.every '1m' do
     if trigger.trigger == "humidity is lower than xx%" && title == "low humidity"
       update_rss = true
     end
-    if trigger.trigger == "humidity is higher than 30%" && title == "high humidity"
+    if trigger.trigger == "humidity is higher than xx%" && title == "high humidity"
       update_rss = true
     end
     if trigger.trigger == "motion is detected" && title == "motion occurred"

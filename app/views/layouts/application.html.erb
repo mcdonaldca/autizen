@@ -13,9 +13,11 @@
 		<div class="mobile-nav menu-icon">
 			<%= image_tag "menu-icon.png" %>
 		</div>
-		<%= link_to controls_url do %>
-			<h1 class="title"><em>ZEN</em>SE</h1>
-		<% end %>
+		<div class="logo">
+			<%= link_to controls_url do %>
+				<%= image_tag("zense.png") %>
+			<% end %>
+		</div>
 		<nav>
  			<ul class="mobile">
         <li><%= link_to "Your Controls", controls_url %></li>
